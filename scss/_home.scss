@@ -251,3 +251,113 @@
         }
     }
 }
+
+.s-review {
+    padding-top: 13.4rem;
+    .top {
+        @include flex(row, flex-end, space-between);
+        margin-bottom: 4rem;
+        h2 {
+            span {
+                display: block;
+                color: $gray-200;
+                margin-bottom: 1.4rem;
+            }
+        }
+        .swiper-pagination {
+            width: auto;
+            position: relative;
+            .swiper-pagination-bullet {
+                border-radius: 0.75rem;
+                opacity: 0.3;
+                background: $brand-yellow;
+                transition: all .3s;
+                &:not(:first-child) {
+                    margin-left: 0.4rem;
+                }
+                &-active {
+                    opacity: 1;
+                    width: 1.723rem;
+                    background: $brand-yellow;
+                }
+            }
+        }
+    }
+    .js-slide-review {
+        overflow: hidden;
+    }
+}
+
+.s-digital {
+    padding-top: 12.7rem;
+    padding-bottom: 8.5rem;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .text {
+        max-width: 54.2rem;
+        h2 {
+            margin-bottom: 4.5rem;
+            span {
+                display: block;
+                color: $gray-200;
+                margin-bottom: 1.4rem;
+                margin-bottom: 0.9rem;
+            }
+        }
+        ul {
+            margin-bottom: 6.1rem;
+            li {
+                display: flex;
+                align-items: center;
+                &:not(:last-child) {
+                    margin-bottom: 4.5rem;
+                }
+                .icon {
+                   width: 4.5rem;
+                   height: 4.5rem;
+                   background-color: $brand-green-light;
+                   border-radius: 0.8rem;
+                   @include flex(row, center, center);
+                   margin-right: 2.6rem;
+                }
+                .info {
+                    h4 {
+                        margin-bottom: 0.4rem;
+                        color: $gray-400;
+                    }
+                    p {
+                        font-size: 1.5rem;
+                        line-height: 150%;
+                        color: $gray-300;
+                    }
+                }
+            }
+        }
+    }
+    .image {
+        position: relative;
+        width: 100%;
+        max-width: 71.2rem;
+        height: 59.8rem;
+        margin-right: -3.8rem;
+        left: 12.5rem;
+        img {
+            position: absolute;
+            &.mockup-01 {
+                left: 0;
+                bottom: 4.7rem;
+            }
+            &.mockup-02 {
+                top: 3px;
+                left: 258px;
+            }
+            &.circle {
+                right: 0;
+                bottom: 0;
+            }
+        }
+        
+    }
+}
