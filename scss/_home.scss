@@ -50,8 +50,7 @@
         h2 {
             margin-bottom: 6.7rem;
             text-align: center;
-            color: #fff;
-            opacity: 0.4;
+            color: rgba($color: #FFF, $alpha: 0.4);
             font-weight: 600;
         }
         .image {
@@ -67,12 +66,14 @@
                 left: 0;
                 z-index: 2;
                 max-width: 43.5rem;
+                animation: floating 6s infinite;
             }
             .back-card {
                 bottom: 4.6rem;
                 right: 8.6rem;
                 z-index: 1;
                 max-width: 35.2rem;
+                animation: floating 8s infinite;
             }
             .circle-card {
                 top: 2.8rem;

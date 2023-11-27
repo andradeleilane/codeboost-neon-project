@@ -20,3 +20,8 @@ var swiper = new Swiper(".js-slide-review", {
       }
     }
 });
+
+AOS.init({
+  duration: 1000,
+  once: true
+});
